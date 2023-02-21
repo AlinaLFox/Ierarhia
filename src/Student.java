@@ -5,8 +5,8 @@ public class Student extends Person {
         private double fee;
 
         public Student (String name, String adress, String program, int year, double fee) {
-            this.name = name;
-            this.adress = adress;
+
+            super (name, adress);
             this.program = program;
             this.year = year;
             this.fee = fee;
@@ -38,8 +38,8 @@ public class Student extends Person {
 
     @Override
     public String toString() {
-        return "Student{" + "name='" + name + ", adress='" + adress +
-                "program='" + program + '\'' + ", year=" + year +
+        return "Student{" + "name='" + name + "', adress='" + adress +
+                "', program='" + program + '\'' + ", year=" + year +
                 ", fee=" + fee + '}';
     }
 }
